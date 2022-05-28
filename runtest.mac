@@ -1,0 +1,20 @@
+# Macro file for example B1
+# 
+# To be run preferably in batch, without graphics:
+# % exampleB1 runtest.mac
+#
+/run/numberOfThreads 4
+/run/initialize
+#
+/control/verbose 0
+/run/verbose 0
+
+# # run1
+# proton 100 MeV to the direction (0.,0.,1.)
+# 1000000 events
+#
+/gun/particle proton
+/gun/energy 100 MeV
+#
+/run/beamOn 1000000
+
